@@ -24,6 +24,10 @@ public class Prenda {
 	public void setCantidad(int cantidad) {
 		this.cantidad = cantidad;
 	}
+	public void mostrarDatos() {
+		System.out.println("ListaDePrendas: "+this.nombre+this.cantidad);
+		
+	}
 	
 	
 
