@@ -3,14 +3,15 @@ package ar.utn.dds;
 public class Prenda {
 	
 	public String nombre;
-	public int cantidad;
+	public int modelo;
+	public String tipo;	//TODO ver si es necesario qe sea enum
 	
-	
-	
-	public Prenda(String nombre, int cantidad) {
+		
+	public Prenda(String nombre, int modelo, String tipo) {
 		super();
 		this.nombre = nombre;
-		this.cantidad = cantidad;
+		this.modelo = modelo;
+		this.tipo = tipo;
 	}
 	public String getNombre() {
 		return nombre;
@@ -18,14 +19,20 @@ public class Prenda {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public int getCantidad() {
-		return cantidad;
+	public int getModelo() {
+		return modelo;
 	}
-	public void setCantidad(int cantidad) {
-		this.cantidad = cantidad;
+	public void setModelo(int modelo) {
+		this.modelo = modelo;
+	}
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 	public void mostrarDatos() {
-		System.out.println("ListaDePrendas: "+this.nombre+this.cantidad);
+		System.out.println("ListaDePrendas: "+this.nombre+this.modelo+this.tipo);
 		
 	}
 	
